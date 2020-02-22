@@ -1,11 +1,11 @@
 ## Step 1:
-Install Oracle Virtual Box
+Install Oracle Virtual Box.
 
 ## Step 2:
-Go to VirtualBox installed location and find VBoxManage.exe. Then add the path to PATH variable so that VBoxManage can be used globally
+Go to VirtualBox installed location and find VBoxManage.exe. Then add the path to PATH variable so that VBoxManage can be used globally.
 
 ## Step 3:
-Download Ubuntu Server 18.04LTS mini.iso which will eventually use internet to download all required packages
+Download Ubuntu Server 18.04LTS mini.iso which will eventually use internet to download all required packages.
 
 ## Step 4:
 Create VM with Storage of 40GB, 2GM of RAM and 4 Processors. Go to Devices in its settings and show the mini.iso for installation.
@@ -25,9 +25,9 @@ This will forward all incoming requests on port 2202 from 127.0.0.1 to Guest OS 
 
 
 ## Step 6:
-Assuming the VM is down, go to terminal/console/git-bash and run the following command
+Assuming the VM is down, go to terminal/console/git-bash and run the following command:
 ```
 VBoxManage list vms [This will list all the VMs look for your created ubuntu server VM]
-VBoxManage startvm "*VM Name*" --type headless [This will start the VM without bothering about Oracle VM GUI and make things faster]
+VBoxManage startvm "[VM Name]" --type headless [This will start the VM without bothering about Oracle VM GUI and make things faster]
 Open Putty and connect to 127.0.0.1 on port 2202 and start using the ubuntu server.
 ```
