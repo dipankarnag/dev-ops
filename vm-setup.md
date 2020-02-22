@@ -1,5 +1,5 @@
 ## Step 1:
-Install Oracle Virtual Box
+~~ Install Oracle Virtual Box
 
 ## Step 2:
 Go to VirtualBox installed location and find VBoxManage.exe. Then add the path to PATH variable so that VBoxManage can be used globally
