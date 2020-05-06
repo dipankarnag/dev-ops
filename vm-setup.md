@@ -29,5 +29,17 @@ Assuming the VM is down, go to terminal/console/git-bash and run the following c
 ```
 VBoxManage list vms [This will list all the VMs look for your created ubuntu server VM]
 VBoxManage startvm "[VM Name]" --type headless [This will start the VM without bothering about Oracle VM GUI and make things faster]
+VBoxManage list running vms [This will list all the running VMs]
+VBoxManage showvminfo "[VM Name]" [This shows info related to a VM]
 Open Putty and connect to 127.0.0.1 on port 2202 and start using the ubuntu server.
 ```
+To stop a VM from Putty connected to the VM via ssh
+```
+sudo shutdown -h now
+```
+Not recommended way to stop a VM from outside
+```
+VBoxManage controlvm "[VM Name]" poweroff soft [This stops a VM in soft mode]
+```
+
+If VBoxManage Commands throw errors, then try using Administrator mode.
