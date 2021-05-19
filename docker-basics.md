@@ -4,7 +4,7 @@
 
 # Always mention container name in docker-compose.yml
 
-Docker will create container with name <<container_name>>_web
+Docker will create container with name <<container_name>>_<<service>>
 
 # To start docker container
 `
