@@ -28,7 +28,8 @@ sudo gitlab-ctl restart
 sudo gitlab-ctl status
 sudo gitlab-ctl reconfigure
 `
-Individual gitlab components can also be managed as `sudo gitlab-ctl nginx <<status/start/stop/restart>>`
+Individual gitlab components can also be managed as `sudo gitlab-ctl <<status/start/stop/restart>> <<component>>`
+Example: `sudo gitlab-ctl status nginx`
 
 ## Step 5:
 Go to /etc/gitlab/gitlab.rb. Use vim to open it and make necessary changes in SSL section as stated below.
@@ -41,6 +42,8 @@ Or,
 go to /etc/gitlab/ssl/ and check for ssl files. Download your certificates and rename them as required and replace them in the folder.
 
 Run command `sudo gitlab-ctl reconfigure` to reconfigure.
+
+To reinstall ssl, append bundle content after crt content and put it in fqdn.crt file. Run gitlab-ctl reconfigure again.
 
 
 ## Step 6:
